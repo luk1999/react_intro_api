@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>It works!</h1>
+
+<h2>Index</h2>
+<ul>
+    <li><a href="{% url 'admin:index' %}" title="Manage content">Admin Panel</a></li>
+    <li><a href="{% url 'swagger-ui' %}" title="Browse API endpoints">API endpoints</a></li>
+</ul>
+{% endblock body %}
